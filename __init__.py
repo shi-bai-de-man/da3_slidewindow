@@ -61,7 +61,7 @@ class DA3SlideWindowInference:
         while True:
             end = min(start + window_size, S)
             if S - end < stride or end >= S:
-                windows.append((start, end))
+                windows.append((start, S))
                 break
             windows.append((start, end))
             start += stride
